@@ -1,5 +1,4 @@
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,16 +9,16 @@ const Footer = () => {
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
                             <li>
-                                <Link to='/'>Home</Link>
+                                
                             </li>
                             <li>
-                                <Link to='/directory'>Directory</Link>
+                                
                             </li>
                             <li>
-                                <Link to='/about'>About</Link>
+                                
                             </li>
                             <li>
-                                <Link to='/contact'>Contact</Link>
+                                
                             </li>
                         </ul>
                     </Col>
@@ -27,19 +26,22 @@ const Footer = () => {
                         <h5>Social</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
-                            href='http://instagram.com/'
+                            href='https://www.instagram.com/loguev/'
+                            target='blank'
                         >
                             <i className='fa fa-instagram' />
                         </a>{' '}
                         <a
                             className='btn btn-social-icon btn-facebook'
-                            href='http://www.facebook.com/'
+                            href='https://www.facebook.com/logan.veith.31/'
+                            target='blank'
                         >
                             <i className='fa fa-facebook' />
                         </a>{' '}
                         <a
                             className='btn btn-social-icon btn-twitter'
-                            href='http://twitter.com/'
+                            href='https://twitter.com/logan_veith'
+                            target='blank'
                         >
                             <i className='fa fa-twitter' />
                         </a>{' '}
@@ -54,17 +56,17 @@ const Footer = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='tel:+12065551234'
+                            href='tel:+15034329947'
                         >
-                            <i className='fa fa-phone' /> 1-206-555-1234
+                            <i className='fa fa-phone' /> 1.503.432.9947
                         </a>
                         <br />
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='mailto:notreal@notreal.co'
+                            href='mailto:logan.veith@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                            <i className='fa fa-envelope-o' /> logan.veith@gmail.com
                         </a>
                     </Col>
                 </Row>

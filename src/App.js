@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import WritePoetry from './WritePoetry'
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 export default function App() {
   const [poemTextInput, setPoetryTextInput] = useState('')
@@ -14,11 +15,12 @@ export default function App() {
     <div className='App'>
       <Header />
       
-      <h1 className='tool-textheader'>poetry and code</h1>
+      <h1 className='tool-textheader'>write...</h1>
       <div className='tool-container'>
           <input value={poemTextInput} onChange={handleOnChange} />
           <WritePoetry name={poemTextInput} />
       </div>
+      <Footer />
     </div>
   );
 }

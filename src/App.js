@@ -17,7 +17,7 @@ export default function App() {
       
       <h1 className='tool-textheader'>write...</h1>
       <div className='tool-container'>
-          <input value={poemTextInput} onChange={handleOnChange} />
+          <input type='text-area' value={poemTextInput} onChange={handleOnChange} />
           <WritePoetry name={poemTextInput} />
       </div>
       <Footer />

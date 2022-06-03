@@ -73,6 +73,10 @@ h2 {
   transition: 300ms ease-in;
 }
 
+.tool-textheader {
+  text-align: center;
+}
+
 .tool-container {
   display:flex;
   flex-direction:row;

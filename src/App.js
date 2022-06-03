@@ -1,9 +1,7 @@
-import React from 'react';
 import { useState } from 'react';
-import { Container, Navbar, NavbarBrand } from 'reactstrap';
-import MainLogo from './app/assets/img/logo-lore.svg';
 import './App.css';
 import WritePoetry from './WritePoetry'
+import Header from './components/Header';
 
 export default function App() {
   const [poemTextInput, setPoetryTextInput] = useState('')
@@ -14,15 +12,9 @@ export default function App() {
 
   return (
     <div className='App'>
-      <Navbar dark sticky='top' expand='md'>
-        <Container>
-          <NavbarBrand href='/'>
-              <img src = {MainLogo} alt='poetry logo' />
-          </NavbarBrand>
-        </Container>
-      </Navbar>
+      <Header />
       
-      <h1>poetry and code</h1>
+      <h1 className='tool-textheader'>poetry and code</h1>
       <div className='tool-container'>
           <input value={poemTextInput} onChange={handleOnChange} />
           <WritePoetry name={poemTextInput} />

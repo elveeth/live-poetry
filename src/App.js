@@ -1,14 +1,19 @@
 import { useState } from 'react';
 import './App.css';
 import WritePoetry from './WritePoetry'
+import WritePoetry2 from './WritePoetry'
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 export default function App() {
   const [poemTextInput, setPoetryTextInput] = useState('')
+  const [poemTextInput2, setPoetryTextInput2] = useState('')
 
   const handleOnChange = (e) => {
     setPoetryTextInput(e.target.value)
+  }
+  const handleOnChange2 = (e) => {
+    setPoetryTextInput2(e.target.value)
   }
 
   return (
@@ -17,39 +22,12 @@ export default function App() {
       
       <h1 className='tool-textheader'>write...</h1>
       <div className='tool-container'>
-          <input type='text-area' value={poemTextInput} onChange={handleOnChange} />
+          <input className='input-lines' type='text-area' value={poemTextInput} onChange={handleOnChange} />
+          <input className='input-lines' type='text-area' value={poemTextInput2} onChange={handleOnChange2} />
           <WritePoetry name={poemTextInput} />
+          <WritePoetry2 name={poemTextInput2} />
       </div>
       <Footer />
     </div>
   );
 }
-
-
-
-
-
-
-
-// import React from 'react';
-// import { useState } from 'react';
-// import { Container, Navbar, NavbarBrand } from 'reactstrap';
-// import MainLogo from './app/assets/img/logo-lore.svg';
-// import './App.css';
-// import WritePoetry from './WritePoetry'
-
-// export default function App() {
-//   const [poemTextInput, setPoetryTextInput] = useState('')
-
-//   const handleOnChange = (e) => {
-//     setPoetryTextInput(e.target.value)
-//   }
-
-//   return (
-//     <div className='App'>
-//       <h1>poetry and code</h1>
-//       <input value={poemTextInput} onChange={handleOnChange} />
-//       <WritePoetry name={poemTextInput} />
-//     </div>
-//   );
-// }

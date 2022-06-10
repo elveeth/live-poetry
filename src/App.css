@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: black;
+  background-color: rgb(254, 254, 254);
 }
 
 h1, h2, h3 {
@@ -73,7 +73,6 @@ h2 {
   text-align: center;
 }
 
-.tool-container {
-  display:flex;
-  flex-direction:row;
+.input-lines {
+  display: block;
 }

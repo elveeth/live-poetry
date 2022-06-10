@@ -73,6 +73,10 @@ h2 {
   text-align: center;
 }
 
+.tool-container {
+  display: flex;
+}
+
 .input-lines {
   display: block;
 }

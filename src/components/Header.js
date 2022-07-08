@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import MainLogo from '../app/assets/img/logo-lore.svg';
 

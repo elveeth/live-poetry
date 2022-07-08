@@ -1,39 +1,14 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   background-color: rgb(254, 254, 254);
 }
 
 h1, h2, h3 {
-  font-family: monospace, cursive;
+  font-family: monospace, sans-serif;
 }
 
 h2 {
   color: #000000;
-}
-
-.card-img-overlay .card-title {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px;
-}
-
-.site-footer {
-  background-image: linear-gradient(#ffffff, rgb(255, 215, 154));
-  padding: 20px 0;
-  margin-top: 2rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.navbar-brand {
-  max-width: 4rem;
-  margin-right: 2rem;
 }
 
 .navbar-brand img {
@@ -49,28 +24,13 @@ h2 {
   min-height: 8rem;
 }
 
-.page-enter {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-.page-enter-active {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: 300ms ease-out;
-}
-
-.page-exit {
-  opacity: 1;
-}
-
-.page-exit-active {
-  opacity: 0;
-  transition: 300ms ease-in;
-}
-
 .tool-textheader {
   text-align: center;
+}
+
+.dropdownMenu {
+  width: 40%;
+  margin-left: 30px;
 }
 
 .tool-container {
@@ -84,11 +44,19 @@ h2 {
   margin-bottom: 5px;
 }
 
-.dropdownMenu {
-  width: 40%;
+.outputs-container {
   margin-left: 30px;
 }
 
-.outputs-container {
-  margin-left: 30px;
+.output-line p {
+  font-family: 'san-serif';
+}
+
+.site-footer {
+  background-image: linear-gradient(#ffffff, rgb(255, 215, 154));
+  padding: 20px 0;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

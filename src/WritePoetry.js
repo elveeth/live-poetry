@@ -1,3 +1,3 @@
-const WritePoetry = ({name}) => <h4>{name}</h4>
+const WritePoetry = ({name}) => <p className="output-line">{name}</p>
 
 export default WritePoetry;

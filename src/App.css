@@ -34,23 +34,28 @@ h2 {
 }
 
 .tool-container {
-  display: flex;
   margin-top: 15px;
+}
+
+.input-parent {
+  display: flex;
 }
 
 .input-lines {
   display: block;
-  width: 90%;
+  width: 50%;
   margin-left: 30px;
   margin-bottom: 5px;
 }
 
 .outputs-container {
   margin-left: 30px;
+  display: flex;
 }
 
 .output-line p {
   font-family: 'san-serif';
+  display: inline;
 }
 
 .site-footer {

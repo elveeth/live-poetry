@@ -25,14 +25,19 @@ export default function App() {
         {[...Array(numLines).keys()].map((i) => {
           return (
             <div key={`tool${i}`} className="tool-item">
-              <input
-                className="input-lines"
-                type="text-area"
-                value={poemTextInputs[`input${i}`]}
-                onChange={(e) => handleOnChange(e.target.value, i)}
-              />
-              <div className="output-line"></div>
-              <WritePoetry name={poemTextInputs[`input${i}`]} />
+              <div className="input-parent">
+                <input
+                  className="input-lines"
+                  type="text-area"
+                  value={poemTextInputs[`input${i}`]}
+                  onChange={(e) => handleOnChange(e.target.value, i)}
+                />
+              </div>
+              <div className="outputs-container">
+                <div className="output-line">
+                  <WritePoetry name={poemTextInputs[`input${i}`]} />
+                </div>
+              </div>
             </div>
           );
         })}
